@@ -6,9 +6,54 @@
     background-size: cover;
     background-position: center center;
 
+    .navbarContainer {
+        width: 100%;
+        height: 4vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navbarLeftSide,
+        .navbarRightSide {
+            width: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbarLeftSide,
+        .navbarRightSide {
+            height: 100%;
+
+            .cornerIconsContainer {
+                width: 5vw;
+                height: 100%;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            p {
+                font-family: 'D-DIN Exp';
+                font-style: 300;
+                font-weight: 700;
+                letter-spacing: 2px;
+                font-size: 1rem;
+                color: #FFFFFF;
+                margin: 0 2rem;
+            }
+
+            .dullText {
+                color: rgba(255, 255, 255, 0.4);
+            }
+        }
+
+
+    }
+
     .sidebarContainer {
         width: 5vw;
-        height: 100vh;
+        height: calc(100vh - 4vw);
         // border: 2px solid red;
         background: rgba(217, 217, 217, 0.09);
         backdrop-filter: blur(6.5px);
@@ -17,14 +62,7 @@
         justify-content: space-between;
         align-items: center;
 
-        .logoContainer {
-            width: 100%;
-            height: 5vh;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+
 
         .verticalTextContainer {
             display: flex;
