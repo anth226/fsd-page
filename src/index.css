@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'D-DINExp';
+  src: url('./assets/fonts/FontsFree-Net-D-DINExp.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+  :root {
+    font-size: 8px;
+  }
+}

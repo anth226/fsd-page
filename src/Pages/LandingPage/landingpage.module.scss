@@ -1,0 +1,121 @@
+.mainContentBlur {
+    backdrop-filter: blur(23.5px) !important;
+    transition: all 0.1s ease;
+}
+
+.landingPageContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../../assets/images/Background_Image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+
+    .contentContainer {
+        width: 100%;
+        height: calc(100vh - 8vh);
+        display: flex;
+
+
+
+        .mainContent {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+            // filter: blur(23.5px);
+
+
+
+            .actioBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35%;
+                height: 7vh;
+                border-radius: 2vw;
+                background: rgba(255, 255, 255, 0.12);
+                backdrop-filter: blur(10px);
+
+                border: none;
+                outline: none;
+                margin: 0 auto;
+
+                cursor: pointer;
+                margin-bottom: 2rem;
+
+                p {
+                    font-family: 'D-DIN Exp', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    color: white;
+                    margin-left: 1rem;
+                    letter-spacing: 2px;
+                }
+
+                .hoveredImg {
+                    display: none;
+                }
+
+                &:hover {
+                    .unhoveredImg {
+                        display: none;
+                    }
+
+                    .hoveredImg {
+                        display: block;
+                    }
+
+                    p {
+                        color: black;
+
+                    }
+
+                    background-color: white;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+
+
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+
+        p {
+            font-family: 'D-DIN Exp', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .landingPageContainer {
+
+        .contentContainer {
+            flex-direction: column;
+
+        }
+
+        .mainContent {
+            .actioBtn {
+                width: 20rem !important;
+                border-radius: 5rem !important;
+            }
+        }
+    }
+}
